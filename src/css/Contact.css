@@ -1,0 +1,200 @@
+.cards_about{
+    display: flex;
+    background-color: #FCC125;
+    justify-content:space-evenly;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: #FCC125;
+    
+}
+
+
+
+.vision{
+   
+    text-align:justify;
+    margin: 0;
+    font-size: 1rem;
+    justify-content: center;
+   
+}
+
+.vision pre{
+    width: 50%;
+}
+
+.hide_1,.hide_2{
+    height: 46px;
+    width: 45px;
+}
+
+.hide_2{
+    
+    display: none;
+}
+
+
+.about_icons{
+    padding: 2%;
+    border: 1px solid #FCC125;
+    border-radius: 25%;
+    transition: ease-in 0.2s;
+    margin: 5%;
+
+}
+
+
+.about_icons:hover{
+    opacity: 0.7;
+    
+
+}
+
+.Top_wrap{
+    flex-wrap: wrap;
+}
+
+.top_margin{
+    margin-top: 5%;
+}
+
+.content span{
+    opacity: 100%;
+    color:transparent;
+    -webkit-text-stroke: 2px #FCC125;
+}
+
+.griddy{
+    display: flex;
+    width: 100%;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.yellow-color{
+    color:#FCC125;
+}
+
+
+.contact_statement h4{
+    font-size: 1.5rem;
+}
+
+.width_set{
+    width: 50%;
+}
+
+
+@media screen and (max-width: 900px) {
+    .vision{
+        width: 80%;
+        font-size: 0.95rem;
+    }
+    .top_margin{
+        margin-top: 10%;
+    }
+    .Top h1{
+        font-size:4rem;
+    }
+
+}
+
+@media screen and (max-width: 760px) {
+    .griddy{
+        display: unset;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .vision{
+        width: 90%;
+        font-size: 0.85rem;
+    }
+    .top_margin{
+        margin-top: 10%;
+    }
+    .Top h1{
+        font-size:3.5rem;
+    }
+    .contact_statement h4{
+        font-size: 1rem;
+    }
+    .top_margin h2{
+        font-size: medium;
+
+    }
+    .contact_statement h4{
+        font-size: 0.9rem;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+    .vision{
+        width: 95%;
+        font-size: 0.8rem;
+    }
+    .top_margin {
+        margin-top: 15%;
+    }
+    .Top h1{
+        font-size:2.75rem;
+    }
+   
+    .contact_statement h4{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .vision{
+        width: 95%;
+        font-size: 0.75rem;
+    }
+    .top_margin{
+        margin-top:15%;
+    }
+    .Top h1{
+        font-size:2.25rem;
+    }
+    .top_margin h2{
+        font-size: small;
+
+    } 
+    .hide_2{
+        display:inline;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .vision{
+        width: 97.5%;
+        
+    }
+    
+    .Top h1{
+        font-size:2rem;
+    }
+    .top_margin h2{
+        font-size: small;
+
+    }
+}
+@media screen and (max-width: 360px) {
+    .vision{
+        font-size: 0.7rem;
+    }
+    
+}
+
+
+@media screen and (max-height: 660px) {
+    .height_hide{
+        display: none;
+    }
+    .top_margin{
+        margin-top:20%;
+    }
+}

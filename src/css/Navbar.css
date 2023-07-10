@@ -1,0 +1,150 @@
+.navbar {
+  background-color: black;
+  display: flex;
+  height: 20vh;
+  width: 100%;
+  align-items: center;
+  text-transform: uppercase;
+  box-shadow: 10px 10px 10px #B09B74;
+  font-family: 'Alegreya', serif;
+}
+
+.leftbar {
+  flex: auto;
+  font-size: x-large;
+  color: white;
+  padding-left: 1rem;
+  
+}
+
+.rightbar {
+  flex: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: medium;
+  color: black;  
+  padding-right: 1rem;
+}
+
+.rightbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 3rem;
+  display: flex;
+  width: 70%;
+  justify-content:space-between;
+}
+
+.rightbar li {
+  
+  background-color: white;
+  margin-left: 1rem;
+  padding: 5px 15px;
+  border-top: none;
+  opacity: 65%;
+  cursor: pointer;
+  border-radius: 5%;
+}
+
+
+.rightbar a:hover {
+  color:beige;
+}
+
+@media (max-width: 920px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .leftbar,
+  .rightbar {
+    flex: none;
+    padding: 1rem;
+    animation-name: navbar-animation;
+    animation-duration: 0.3s;
+  }
+
+
+  .rightbar ul{
+    width: 100%;
+    padding: 0;
+    font-size: xx-small;
+   
+  }
+
+
+  @keyframes navbar-animation {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@media (max-width: 550px) {
+   .rightbar{
+    font-size: small;
+  };
+}
+
+/* For the More (retro) page */
+.more-page {
+  
+  font-family: 'Press Start 2P', cursive;
+  .rightbar li{
+    background-color: white;
+    margin-left: 1rem;
+    border: 3px solid #B09B74;
+    padding: 10px 20px;
+    border-top: none;
+    box-shadow: 5px 5px 5px #B09B74;
+    cursor: pointer;
+    transition: box-shadow, background-color 450ms;
+  }
+  .rightbar a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .rightbar li:hover{
+    background-color: #B09B74;
+    box-shadow: 5px 5px 5px white;
+  }
+  .rightbar {
+    font-size: medium;
+    justify-content: space-around;
+  }
+  
+  
+
+  @media screen and (max-width:720px) {
+
+    .leftbar{
+      font-size: 1.5rem;
+
+    }
+    .rightbar {
+      font-size: small;
+      justify-content: center;
+      
+    }
+    .rightbar ul{
+      padding: 0rem;
+      
+    }
+  }
+  @media (max-width: 560px) {
+    .leftbar{
+      font-size: medium;
+    }
+    
+    .rightbar{
+      font-size: xx-small;
+    };
+  }
+}
