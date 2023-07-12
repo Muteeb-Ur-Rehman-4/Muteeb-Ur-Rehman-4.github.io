@@ -1,38 +1,59 @@
 .More-back{
-    background-image: url("../misc/More_back.png");
-    width: 100%;
-    height: 120vh;
+    background-image: url("../misc/The-one.gif");
+     /* Full height */
+  height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
-}
-#top-heading{
-    
-    font-family: 'Bungee Outline', cursive;
-    font-size: xx-large;
-  }
-
-.interests p{
-    font-size: large;
-    
+    text-transform: uppercase;
 }
 
 #page-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    height: 50%;
     
 }
+
+#top-heading, #box h3{
+    font-family: 'Bungee Outline', cursive;
+}
+#top-heading{
+    font-size: xx-large;
+}
+
 #box{
-    background: rgba(218, 202, 182, 0.49);
+    /* background-image: url("/src/misc/gaming-back.gif"); */
+    display: block;
+    text-align: left;
     border-radius: 10px;
     box-shadow: 1px 2px 20px #BFBFBF;
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(7.4px);
     border: 1px solid rgba(218, 202, 182, 0.2);
-    margin: 10%;
-    
+    margin: 15%;
     
 }
 #box h3{
+    font-size: x-large;
+    letter-spacing: 0.5rem;
+}
+
+.interests p,#box p{
     font-family: 'Special Elite', cursive;
+    font-size: large;
+}
+
+
+
+
+@media screen and (max-width: 640px) {
+    .More-back{
+        height: max-content;
+    }
+    #page-grid{
+        grid-template-columns: 1fr;
+    }
 }
