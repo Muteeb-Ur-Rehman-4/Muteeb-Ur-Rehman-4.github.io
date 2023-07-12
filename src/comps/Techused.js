@@ -7,13 +7,11 @@ import MySQL_icon from '../misc/MySQL.png';
 export default function Techused() {
   return (
     <div className='tech-used'>
-      <p>
-        Technologies I have Hands-on experience with:
-      </p>
+      <h3>
+        Technologies I have hands-on experience with:
+      </h3>
       <div id='tech-box'>
-        <div>
-          <img className='icons' src={HTML_icon} alt="HTML" />
-        </div>
+      <img className='icons' src={HTML_icon} alt="HTML" />  
       <img className='icons' src={CSS_icon} alt="CSS" />
       <img className='icons' src={React_icon} alt="React" />
       <img className='icons' src={MySQL_icon} alt="MySQL" />
