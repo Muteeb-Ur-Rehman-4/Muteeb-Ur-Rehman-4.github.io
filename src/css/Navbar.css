@@ -1,12 +1,28 @@
 .navbar {
-  background-color: black;
+  position: fixed;
+  background-color: transparent;
   display: flex;
   height: 20vh;
   width: 100%;
   align-items: center;
   text-transform: uppercase;
-  box-shadow: 10px 10px 10px #B09B74;
   font-family: 'Alegreya', serif;
+  margin-bottom: 2.5rem;
+  animation-name: navbar-animation;
+  animation-duration: 0.3s;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  transition: background-color 500ms ease-in-out;
+}
+.navbar.sticky {
+  height: 15vh;
+  top: 0;
+  left: 0;
+  background-color: rgb(76, 81, 105); /* Add your desired background color for the sticky navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow if desired */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 .leftbar {
@@ -14,7 +30,6 @@
   font-size: x-large;
   color: white;
   padding-left: 1rem;
-  
 }
 
 .rightbar {
@@ -23,36 +38,40 @@
   justify-content: flex-end;
   align-items: center;
   font-size: medium;
-  color: black;  
+  color: white;
   padding-right: 1rem;
+}
+
+.navbar.sticky.rightbar li{
+  color: black;
 }
 
 .rightbar ul {
   list-style-type: none;
   margin: 0;
-  padding: 3rem;
+  padding: 0;
   display: flex;
   width: 70%;
-  justify-content:space-between;
+  justify-content: space-around;
 }
 
 .rightbar li {
-  
-  background-color: white;
   margin-left: 1rem;
-  padding: 5px 15px;
+  padding: 5px 10px;
   border-top: none;
-  opacity: 65%;
+  opacity: 0.65;
   cursor: pointer;
   border-radius: 5%;
+  color: rgba(255, 255, 255, 0.65);
+  transition: color 0.3s ease, background-color 0.45s;
 }
 
-
-.rightbar a:hover {
-  color:beige;
+.rightbar li:hover {
+  color: beige;
+  opacity: 1;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1240px) {
   .navbar {
     flex-direction: column;
     height: auto;
@@ -62,18 +81,14 @@
   .rightbar {
     flex: none;
     padding: 1rem;
-    animation-name: navbar-animation;
-    animation-duration: 0.3s;
   }
 
-
-  .rightbar ul{
+  .rightbar ul {
     width: 100%;
     padding: 0;
-    font-size: xx-small;
-   
+    font-size: small;
+    margin: 0;
   }
-
 
   @keyframes navbar-animation {
     from {
@@ -88,63 +103,65 @@
 }
 
 @media (max-width: 550px) {
-   .rightbar{
+  .rightbar {
     font-size: small;
-  };
+  }
 }
 
-/* For the More (retro) page */
-.more-page {
-  
-  font-family: 'Press Start 2P', cursive;
-  .rightbar li{
-    background-color: white;
-    margin-left: 1rem;
-    border: 3px solid #B09B74;
-    padding: 10px 20px;
-    border-top: none;
-    box-shadow: 5px 5px 5px #B09B74;
-    cursor: pointer;
-    transition: box-shadow, background-color 450ms;
+@media screen and (max-width: 720px) {
+  .leftbar {
+    font-size: 1.5rem;
   }
-  .rightbar a {
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  .rightbar li:hover{
-    background-color: #B09B74;
-    box-shadow: 5px 5px 5px white;
-  }
+
   .rightbar {
     font-size: medium;
-    justify-content: space-around;
+    justify-content: center;
   }
-  
-  
 
-  @media screen and (max-width:720px) {
-
-    .leftbar{
-      font-size: 1.5rem;
-
-    }
-    .rightbar {
-      font-size: small;
-      justify-content: center;
-      
-    }
-    .rightbar ul{
-      padding: 0rem;
-      
-    }
+  .rightbar ul {
+    padding: 0;
+    font-size: small;
   }
-  @media (max-width: 560px) {
-    .leftbar{
-      font-size: medium;
-    }
-    
-    .rightbar{
-      font-size: xx-small;
-    };
+}
+
+@media (max-width: 560px) {
+  .leftbar {
+    font-size: medium;
   }
+
+  .rightbar ul {
+    font-size: xx-small;
+    padding: 0 1%;
+  }
+}
+
+/* more-page */
+
+.more-page {
+  box-shadow: 10px 10px 10px #20E7F9;
+  background-image: url("../misc/good-one.gif");
+  font-family: 'Press Start 2P', cursive;
+}
+.more-page .rightbar{
+  width: 80%;
+}
+.more-page .rightbar li {
+  color: white;
+  margin-left: 1rem;
+  border: 3px solid #20E7F9;
+  padding: 10px 0px;
+  border-top: none;
+  box-shadow: 5px 5px 5px #20E7F9;
+  cursor: pointer;
+  transition: box-shadow, background-color 450ms;
+}
+
+.more-page .rightbar li:hover {
+  background-color: #20E7F9;
+  box-shadow: 5px 5px 5px white;
+}
+
+.more-page .rightbar a {
+  text-decoration: none;
+  transition: color 0.3s ease;
 }

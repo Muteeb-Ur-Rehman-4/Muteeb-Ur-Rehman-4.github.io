@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import '../css/Navbar.css';
 
@@ -6,6 +6,25 @@ const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const isMorePage = location.pathname === '/More'; // Checks if it's the "More" page
+
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if (offset > 0) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   // Navigation functions for navbar
   const navToHome = (e) => {
@@ -29,7 +48,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className={`navbar ${isMorePage ? 'more-page' : 'normal-page'}`}>
+    <div className={`navbar ${isMorePage ? 'more-page' : 'normal-page'} ${isSticky ? 'sticky' : ''}`}>
       <div className="leftbar">
         <a>Muteeb's Portfolio</a>
       </div>
