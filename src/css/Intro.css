@@ -1,20 +1,23 @@
 .intro{
-    height: 35vh;
-    
+  font-family: 'Vollkorn', serif;
+  margin-top: 7rem;
 }
+
+.flexing{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .intro-btns{
-    margin-top: 2rem;
+    margin-top: 5rem;
     display: flex;
     justify-content: space-evenly;
- 
 }
-
-
 
 
 #no-decor{
     text-decoration: none;
-    font-family: 'Vollkorn', serif;
     text-transform: uppercase;
 }
 
@@ -58,12 +61,6 @@
     width: 28%;
   }
   
- /* reverse the button animation! */
-
-
-  #span-reverse{
-    right: 0;
-  }
   
   .btn span, 
   .btn div, 
@@ -85,7 +82,7 @@
   }
   
   .btn:hover .icon .fa {
-    font-size: 45px;
+    font-size: 3rem;
   }
 
   .icon-size{
@@ -95,9 +92,7 @@
   }
 
   @media screen and (max-width: 800px) {
-    .intro{
-        height: 50vh;
-    }
+    
     .intro-btns{
         display: block;
         

@@ -4,18 +4,35 @@ import HTML_icon from '../misc/HTML.png';
 import CSS_icon from '../misc/CSS3.png';
 import React_icon from '../misc/Reactjs.png';
 import MySQL_icon from '../misc/MySQL.png';
+
+
 export default function Techused() {
   return (
+  <div className='tech-container'>
+    
+  
     <div className='tech-used'>
+      <div className='blocked'>
+        <h3>RETRO</h3>
+      </div>
+      <div className='blocked'>
       <h3>
         Technologies I have hands-on experience with:
       </h3>
       <div id='tech-box'>
+        <div className='grid-container'>
+
       <img className='icons' src={HTML_icon} alt="HTML" />  
       <img className='icons' src={CSS_icon} alt="CSS" />
       <img className='icons' src={React_icon} alt="React" />
       <img className='icons' src={MySQL_icon} alt="MySQL" />
+        </div>
+      </div>
+      </div>
+      <div className='blocked'>
+        <h3>contact</h3>
       </div>
     </div>
+    </div>  
   )
 }

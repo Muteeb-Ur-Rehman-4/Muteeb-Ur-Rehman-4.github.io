@@ -3,7 +3,6 @@ import { ReactDOM } from 'react-dom/client'
 import './App.css'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
-import Skills from './pages/Skills'
 import More from './pages/More'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 function App() {
@@ -15,7 +14,6 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/Contact' element={<Contact />} />
         <Route path='/More' element={<More /> }/>
-        <Route path='/Skills' element={<Skills /> }/>
       </Routes>
       </>
       
