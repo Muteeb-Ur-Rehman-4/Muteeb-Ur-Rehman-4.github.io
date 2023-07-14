@@ -1,6 +1,6 @@
 .navbar {
   position: fixed;
-  background-color: transparent;
+  background: rgba(255, 255, 255, 0.2);
   display: flex;
   height: 20vh;
   width: 100%;
@@ -9,7 +9,7 @@
   font-family: 'Vollkorn', serif;
   margin-bottom: 2.5rem;
   animation-name: navbar-animation;
-  animation-duration: 0.3s;
+  animation-duration: 0.5s;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -17,11 +17,11 @@
   z-index:2;
 }
 .navbar.sticky {
-  height: 15vh;
+  height: 20vh;
   top: 0;
   left: 0;
-  background-color: rgb(76, 81, 105); /* Add your desired background color for the sticky navbar */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow if desired */
+  background-color: #95B4DE;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 
 }
@@ -29,7 +29,7 @@
 .leftbar {
   flex: auto;
   font-size: x-large;
-  color: white;
+  color: black;
   padding-left: 1rem;
 }
 
@@ -39,7 +39,6 @@
   justify-content: flex-end;
   align-items: center;
   font-size: medium;
-  color: white;
   padding-right: 1rem;
 }
 
@@ -58,12 +57,12 @@
 
 .rightbar li {
   margin-left: 1rem;
-  padding: 5px 10px;
+  padding: 0.25rem 0.6rem;
   border-top: none;
   opacity: 0.65;
   cursor: pointer;
   border-radius: 5%;
-  color: rgba(255, 255, 255, 0.65);
+  color: black;
   transition: color 0.3s ease, background-color 0.45s;
 }
 
@@ -102,6 +101,8 @@
     }
   }
 }
+
+
 
 @media (max-width: 550px) {
   .rightbar {
@@ -146,6 +147,10 @@
 .more-page .rightbar{
   width: 80%;
 }
+.more-page .leftbar{
+  color: white;
+}
+
 .more-page .rightbar li {
   color: white;
   margin-left: 1rem;
