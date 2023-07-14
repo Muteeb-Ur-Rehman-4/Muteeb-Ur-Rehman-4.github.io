@@ -6,7 +6,7 @@
   width: 100%;
   align-items: center;
   text-transform: uppercase;
-  font-family: 'Alegreya', serif;
+  font-family: 'Vollkorn', serif;
   margin-bottom: 2.5rem;
   animation-name: navbar-animation;
   animation-duration: 0.3s;
@@ -14,6 +14,7 @@
   position: sticky;
   top: 0;
   transition: background-color 500ms ease-in-out;
+  z-index:2;
 }
 .navbar.sticky {
   height: 15vh;
@@ -148,8 +149,8 @@
 .more-page .rightbar li {
   color: white;
   margin-left: 1rem;
-  border: 3px solid #20E7F9;
-  padding: 10px 0px;
+  border: 0.2rem solid #20E7F9;
+  padding: 0.75rem 0.25rem;
   border-top: none;
   box-shadow: 5px 5px 5px #20E7F9;
   cursor: pointer;

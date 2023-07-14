@@ -42,10 +42,6 @@ const Navbar = () => {
     navigate('/More');
   };
 
-  const navToSkills = (e) => {
-    e.preventDefault();
-    navigate('/Skills');
-  };
 
   return (
     <div className={`navbar ${isMorePage ? 'more-page' : 'normal-page'} ${isSticky ? 'sticky' : ''}`}>
@@ -58,14 +54,11 @@ const Navbar = () => {
           <li onClick={navToHome}>
             <a>Home</a>
           </li>
-          <li onClick={navToSkills}>
-            <a>Skills</a>
+          <li onClick={navToContact}>
+            <a>Contact</a>
           </li>
           <li onClick={navToMore}>
             <a>More</a>
-          </li>
-          <li onClick={navToContact}>
-            <a>Contact</a>
           </li>
         </ul>
       </div>

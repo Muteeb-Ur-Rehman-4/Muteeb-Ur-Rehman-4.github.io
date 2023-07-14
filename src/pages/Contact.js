@@ -6,7 +6,7 @@ export default function Contact() {
     <div className='contact-body'>
       <Navbar />
       <h2>
-        My Contact Info:
+        Feel free to contact me through any of the links below!
       </h2>
      
     </div>
