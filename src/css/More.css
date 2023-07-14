@@ -1,7 +1,7 @@
 .More-back{
     background-image: url("../misc/The-one.gif");
      /* Full height */
-  height: 100%;
+    height: 100%;
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -38,7 +38,11 @@
 }
 #box h3{
     font-size: x-large;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.4rem;
+    font-weight: bolder;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .interests p,#box p{
@@ -46,12 +50,27 @@
     font-size: large;
 }
 
-
+@media screen and (max-width: 786px) {
+    #box h3 {
+     font-size: large;
+    }
+    .interests p, #box p {
+        font-size: medium;
+    }
+   }
 
 
 @media screen and (max-width: 640px) {
     .More-back{
         height: max-content;
+    }
+    #box{
+        background-image: url('../misc/Pac_men.jpg');
+        
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     #page-grid{
         grid-template-columns: 1fr;

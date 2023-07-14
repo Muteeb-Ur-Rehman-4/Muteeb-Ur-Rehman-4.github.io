@@ -1,9 +1,10 @@
 .home{
+  /* change color here */
     color:white;
 }
 
 .home-back{
-  background-image: url('/src/misc/home-back3.jpg');
+  
   /* Full height */
   height: 100%;
   /* Center and scale the image nicely */

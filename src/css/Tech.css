@@ -1,43 +1,149 @@
 .tech-container{
     margin-top: 12rem;
+    position: relative;
 }
 .tech-used{
-    padding: 2% 2%;
-    height: 35vh;
+    padding: 2% 0%;
     width: 100%;
     display: flex;
     justify-content: flex-start;
+    text-transform: uppercase;
 }
 #tech-box {
     align-items: center;
-    height: 12vh;
-    background: rgb(76, 81, 105);
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(5.9px);
+    height: 20vh;
+   
     display: flex;
     justify-content: center;
 }
 .icons{
     height: 10vh;
     width: 10vh;
-    padding: 1.5rem 0rem;
+    filter: brightness(0) invert(1);
 }
 
 .icons:hover{
     cursor: pointer;
+    
 }
 
-.blocked{
-    display: block;
-    padding: 0rem 5rem;
+.carded{
+    display: flex;
+    padding: 0rem 3rem;
+    margin: 0rem 3%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    box-shadow: 0 0.4rem 1.875rem rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.6px);
+    -webkit-backdrop-filter: blur(3.6px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    flex-direction: column;
+    justify-content: center;
+}
+#retro{
+    background-image: url('../misc/gaming-back.gif');
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+}
+#tech{
+    background-image: url('../misc/tech-back.gif');
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    
 }
 
-
+#contact{
+    background-image: url('../misc/tech-back.gif');
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
 @media screen and (max-width:960px) {
-    .blocked{
+    #tech-box{
+        margin-top: 2rem;
+        height: auto;
+        width: 50%;
+        padding: 2%;
+    }   
+    
+    .carded{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 4rem 3%;
+    }
+    .tech-used{
+        flex-direction: column;
+        height: max-content;
+    }
+    
+}
+
+@media screen and (max-width:786px) {
+    #tech-box{
+        height: auto;
+        width: 50%;
         
+    }   
+    .icons{
+        height: 14vh;
+        width: 14vw;
+        padding: 2%;
+        
+    }
+    .carded{
+        padding: 5rem ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tech-used{
+        flex-direction: column;
+        height: max-content;
+        padding: 0;
+        font-size:small;
+    }
+    
+}
+
+@media screen and (max-width:640px) {
+    .btn{
+        width: 75%;
+    }
+    
+    #tech-box{
+        height: auto;
+        width: 70%;
+        
+    }   
+    .icons{
+        height: 16vh;
+        width: 20vw;
+        padding: 5%;
+    }
+    .carded{
+        padding: 5rem ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tech-used{
+        flex-direction: column;
+        height: max-content;
+        padding: 0;
+        font-size:small;
     }
     
 }

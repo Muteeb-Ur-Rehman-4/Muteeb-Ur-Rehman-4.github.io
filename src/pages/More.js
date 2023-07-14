@@ -13,13 +13,13 @@ export default function More() {
       </div>
       <div id="page-grid">
         <div id="box">
-          <h3>Gaming</h3>
+          <h3>Mastering the Art of Real-Time Strategy</h3>
           <p>I mainly play rts games like LOL and DOTA now but I used to be a hardcore FIFA player too!</p>
         </div>
         <div id="box">
 
-          <h3>Gaming</h3>
-          <p>I mainly play rts games like LOL and DOTA now but I used to be a hardcore FIFA player too!</p>
+          <h3>Embracing the Journey of Exploration!</h3>
+          <p>I constantly want to learn new things, whether it is for work or my own personal development.</p>
         </div>
       </div>
     </div>

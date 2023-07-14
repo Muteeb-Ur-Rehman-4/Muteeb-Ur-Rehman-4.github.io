@@ -6,6 +6,9 @@ import Contact from './pages/Contact'
 import More from './pages/More'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 function App() {
+  
+
+
   return (
     
     <div className="App">
