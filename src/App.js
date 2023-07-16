@@ -1,34 +1,45 @@
-import React from 'react'
-import { ReactDOM } from 'react-dom/client'
-import './App.css'
-import Home from './pages/Home'
-import Contact from './pages/Contact'
-import More from './pages/More'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-function App() {
-  
+import React, { Suspense, useState, useEffect } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import PacmanLoader from "react-spinners/ClipLoader";
+import './App.css';
 
+const LazyHome = React.lazy(() => import('./pages/Home'));
+const LazyContact = React.lazy(() => import('./pages/Contact'));
+const LazyMore = React.lazy(() => import('./pages/More'));
 
-  return (
-    
-    <div className="App">
-      <>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/Contact' element={<Contact />} />
-        <Route path='/More' element={<More /> }/>
-      </Routes>
-      </>
-      
-      {/* <header className="App-header">
-               
-      </header> */}
-      
-      {/* <Contact/>
-      <Skills/>
-      <More/> */}
+const LoadingScreen = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const delay = 1500; // Adjust the delay time in milliseconds (e.g., 3000 for 3 seconds)
+
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, delay);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return isLoading ? (
+    <div className="loading-screen">
+      <PacmanLoader color="#ffffff" loading={isLoading} size={150} />
     </div>
-   
+  ) : null;
+};
+
+function App() {
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <Suspense fallback={<LoadingScreen />}>
+          <Routes>
+            <Route path="/" element={<LazyHome />} />
+            <Route path="/Contact" element={<LazyContact />} />
+            <Route path="/More" element={<LazyMore />} />
+          </Routes>
+        </Suspense>
+      </BrowserRouter>
+    </div>
   );
 }
 

@@ -1,9 +1,12 @@
 .intro{
-  font-family: 'Vollkorn', serif;
+  font-family: 'DynaPuff', cursive;
   margin-top: 7rem;
   position: relative;
+  color: white;
+  text-shadow: 2px 2px black;
   
 }
+
 .intro-top{
   margin-bottom: 5rem;
 }
@@ -43,9 +46,9 @@
     width: 30vw;
     height: 15vh;
     line-height: 7rem;
-    background-color: #95B4DE;
+    background-color: #494949;
     /* Change color here */
-    color: black;
+    color: white;
   }
   
   .btn span,
@@ -68,6 +71,7 @@
   .btn .icon {
     right: 0;
     width: 28%;
+    background-color:#333333;
   }
   
   
@@ -80,7 +84,7 @@
   .icon {
     width: 200px;
     border-radius: 5px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
   }
   
@@ -107,7 +111,7 @@
   }
   @media screen and (max-width: 960px) {
     .intro-btns{
-      margin: 10rem 0rem;
+      margin: 5rem 0rem;
     }
     .btn{
       font-size: 2rem;
@@ -115,6 +119,9 @@
 
     .flexing{
       flex-direction: column!important;
+    }
+    .bottom{
+      margin-top:22vh;
     }
 
   }
@@ -131,5 +138,18 @@
 
     .btn span{
         font-size: large;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+
+    .btn span{
+        font-size: medium;
+    }
+  }
+  @media screen and (max-width: 360px) {
+
+    .btn span{
+        font-size: small;
     }
   }

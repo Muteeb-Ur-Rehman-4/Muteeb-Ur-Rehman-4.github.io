@@ -8,6 +8,7 @@
     display: flex;
     justify-content: flex-start;
     text-transform: uppercase;
+    align-items: center;
 }
 #tech-box {
     align-items: center;
@@ -17,9 +18,10 @@
     justify-content: center;
 }
 .icons{
-    height: 10vh;
-    width: 10vh;
+    height: 9vh;
+    width: auto;
     filter: brightness(0) invert(1);
+    
 }
 
 .icons:hover{
@@ -36,22 +38,26 @@
     box-shadow: 0 0.4rem 1.875rem rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(3.6px);
     -webkit-backdrop-filter: blur(3.6px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid #ffffff4d;
     flex-direction: column;
     justify-content: center;
+    min-height: 30vh;
 }
 #retro{
-    background-image: url('../misc/gaming-back.gif');
+    background-image: url('../misc/Pika.gif');
     height: 100%;
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    /* Text shadow added for improved readability */
     color: white;
-
+    background-color:rgb(122, 222, 122);
 }
+
+
 #tech{
-    background-image: url('../misc/tech-back.gif');
+    background-image: url('../misc/good-back.gif');
     height: 100%;
     /* Center and scale the image nicely */
     background-position: center;
@@ -62,7 +68,7 @@
 }
 
 #contact{
-    background-image: url('../misc/tech-back.gif');
+    background-image: url('../misc/Footer.gif');
     height: 100%;
     /* Center and scale the image nicely */
     background-position: center;
@@ -70,6 +76,15 @@
     background-size: cover;
     color: white;
 }
+
+#retro, #tech, #contact{
+    text-shadow:2px 2px 2px black;
+}
+
+.loader{
+    min-height: 20vh;
+}
+
 @media screen and (max-width:960px) {
     #tech-box{
         margin-top: 2rem;
@@ -99,7 +114,7 @@
     }   
     .icons{
         height: 14vh;
-        width: 14vw;
+        width: auto;
         padding: 2%;
         
     }
@@ -129,12 +144,12 @@
         
     }   
     .icons{
-        height: 16vh;
-        width: 20vw;
+        height: 18vh;
+        width: auto;
         padding: 5%;
     }
     .carded{
-        padding: 5rem ;
+        padding: 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;

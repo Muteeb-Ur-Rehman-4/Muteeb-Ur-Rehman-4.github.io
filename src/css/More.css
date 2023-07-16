@@ -18,7 +18,9 @@
 }
 
 #top-heading, #box h3{
-    font-family: 'Bungee Outline', cursive;
+    
+    font-family: 'Tektur', cursive;
+    text-shadow:2px 2px 2px black;
 }
 #top-heading{
     font-size: xx-large;
@@ -30,8 +32,7 @@
     text-align: left;
     border-radius: 10px;
     box-shadow: 1px 2px 20px #BFBFBF;
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(7.4px);
+    background-blend-mode: difference;
     border: 1px solid rgba(218, 202, 182, 0.2);
     margin: 15%;
     
@@ -41,21 +42,34 @@
     letter-spacing: 0.4rem;
     font-weight: bolder;
     text-align: center;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    text-shadow:3px 3px 3px black;
 }
-
-.interests p,#box p{
-    font-family: 'Special Elite', cursive;
+.interests p, .interests h3, #box p{
+    font-family: 'Turret Road', cursive;
+}
+.interests p, #box p{
     font-size: large;
+    text-align: justify;
+    text-shadow:2px 2px 2px black;
 }
 
 @media screen and (max-width: 786px) {
+    #page-grid{
+        grid-template-columns: 1fr;
+    }
     #box h3 {
      font-size: large;
+     display: flex;
     }
     .interests p, #box p {
         font-size: medium;
+    }
+    #box{
+        background-image: url('../misc/Pac_men.jpg');
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
    }
 
@@ -64,15 +78,15 @@
     .More-back{
         height: max-content;
     }
-    #box{
-        background-image: url('../misc/Pac_men.jpg');
-        
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    #box h3{
+        font-size: medium;
     }
-    #page-grid{
-        grid-template-columns: 1fr;
+    .interests p, #box p {
+        font-size: small;
+    }
+    #top-heading, #box h3{
+        font-family: 'Bungee Outline', cursive;
+       
     }
 }
+

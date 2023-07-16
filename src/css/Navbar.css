@@ -2,11 +2,11 @@
   position: fixed;
   background: rgba(255, 255, 255, 0.2);
   display: flex;
-  height: 20vh;
-  width: 100%;
   align-items: center;
+  justify-content: center;
+  min-height: 20vh;
   text-transform: uppercase;
-  font-family: 'Vollkorn', serif;
+  font-family: 'Reggae One', cursive;
   margin-bottom: 2.5rem;
   animation-name: navbar-animation;
   animation-duration: 0.5s;
@@ -14,22 +14,25 @@
   position: sticky;
   top: 0;
   transition: background-color 500ms ease-in-out;
-  z-index:2;
+  z-index: 2;
 }
+
 .navbar.sticky {
-  height: 20vh;
+  display: flex;
+  justify-content: center;
+  min-height: 20vh;
+  height: max-content;
   top: 0;
-  left: 0;
-  background-color: #95B4DE;
+  background-color: #333333;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-
+  
 }
 
 .leftbar {
   flex: auto;
   font-size: x-large;
-  color: black;
+  color: white;
   padding-left: 1rem;
 }
 
@@ -40,10 +43,6 @@
   align-items: center;
   font-size: medium;
   padding-right: 1rem;
-}
-
-.navbar.sticky.rightbar li{
-  color: black;
 }
 
 .rightbar ul {
@@ -62,7 +61,7 @@
   opacity: 0.65;
   cursor: pointer;
   border-radius: 5%;
-  color: black;
+  color: white;
   transition: color 0.3s ease, background-color 0.45s;
 }
 
@@ -71,10 +70,59 @@
   opacity: 1;
 }
 
+.top-loader {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Add this line */
+}
+
+
+
+/* more-page */
+
+.more-page {
+  box-shadow: 10px 10px 10px #20e7f9;
+  background-image: url('../misc/good-one.gif');
+  font-family: 'Press Start 2P', cursive;
+}
+
+.more-page .navbar {
+  background: none;
+  box-shadow: none;
+}
+
+.more-page .leftbar {
+  color: white;
+}
+
+.more-page .rightbar li {
+  color: white;
+  margin-left: 1rem;
+  border: 0.2rem solid #20e7f9;
+  padding: 0.75rem 0.25rem;
+  border-top: none;
+  box-shadow: 5px 5px 5px #20e7f9;
+  cursor: pointer;
+  transition: box-shadow, background-color 450ms;
+}
+
+.more-page .rightbar li:hover {
+  background-color: #20e7f9;
+  box-shadow: 5px 5px 5px white;
+}
+
+.more-page .rightbar a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
 @media (max-width: 1240px) {
   .navbar {
     flex-direction: column;
     height: auto;
+    align-items: center;
   }
 
   .leftbar,
@@ -104,12 +152,6 @@
 
 
 
-@media (max-width: 550px) {
-  .rightbar {
-    font-size: small;
-  }
-}
-
 @media screen and (max-width: 720px) {
   .leftbar {
     font-size: 1.5rem;
@@ -132,42 +174,13 @@
   }
 
   .rightbar ul {
-    font-size: xx-small;
+    font-size: x-small;
     padding: 0 1%;
   }
 }
 
-/* more-page */
-
-.more-page {
-  box-shadow: 10px 10px 10px #20E7F9;
-  background-image: url("../misc/good-one.gif");
-  font-family: 'Press Start 2P', cursive;
-}
-.more-page .rightbar{
-  width: 80%;
-}
-.more-page .leftbar{
-  color: white;
-}
-
-.more-page .rightbar li {
-  color: white;
-  margin-left: 1rem;
-  border: 0.2rem solid #20E7F9;
-  padding: 0.75rem 0.25rem;
-  border-top: none;
-  box-shadow: 5px 5px 5px #20E7F9;
-  cursor: pointer;
-  transition: box-shadow, background-color 450ms;
-}
-
-.more-page .rightbar li:hover {
-  background-color: #20E7F9;
-  box-shadow: 5px 5px 5px white;
-}
-
-.more-page .rightbar a {
-  text-decoration: none;
-  transition: color 0.3s ease;
+@media (max-width: 550px) {
+  .rightbar {
+    font-size: small;
+  }
 }
