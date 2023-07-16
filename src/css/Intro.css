@@ -4,7 +4,7 @@
   position: relative;
   color: white;
   text-shadow: 2px 2px black;
-  
+  min-height: 35vh;
 }
 
 .intro-top{

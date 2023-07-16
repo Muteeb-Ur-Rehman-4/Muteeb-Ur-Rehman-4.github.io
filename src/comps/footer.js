@@ -12,7 +12,7 @@ const Footer = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const delay = 1200; // 1.2s delay
+    const delay = 3100; // 3.1s delay. Last load!
 
     const timer = setTimeout(() => {
       setIsLoading(false);

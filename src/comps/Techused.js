@@ -11,7 +11,7 @@ export default function Techused() {
   const [isLoading, setIsLoading] = useState(true);
   // Essential to add lazyLoading as has gifs.
   useEffect(() => {
-    const delay = 2500; // 2.5s delay
+    const delay = 2000; // 2.0s delay
 
     const timer = setTimeout(() => {
       setIsLoading(false);
