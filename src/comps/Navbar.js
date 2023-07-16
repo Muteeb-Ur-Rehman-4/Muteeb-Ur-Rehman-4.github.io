@@ -1,6 +1,6 @@
 import React, { useState, useEffect, lazy } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { PacmanLoader } from 'react-spinners';
+import { SyncLoader } from 'react-spinners';
 import '../css/Navbar.css';
 
 const Navbar = () => {
@@ -21,7 +21,7 @@ const Navbar = () => {
       }
     };
 
-    const delay = 1200; // 1.2s delay
+    const delay = 1200; // 1.2s delay. First load.
 
     const timer = setTimeout(() => {
       setIsLoading(false);
@@ -55,7 +55,7 @@ const Navbar = () => {
     <div className={`navbar ${isMorePage ? 'more-page' : 'normal-page'} ${isSticky ? 'sticky' : ''}`}>
       {isLoading ? (
         <div className='top-loader'>
-        <PacmanLoader color="#ffffff" loading={isLoading} size={60} />
+        <SyncLoader color="#ffffff" loading={isLoading} size={60} />
         </div>
       ) : (
         <>
