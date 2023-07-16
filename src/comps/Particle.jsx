@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
-import React from 'react'
+import React from 'react';
 
 export default function Particle() {
 
@@ -31,7 +31,7 @@ export default function Particle() {
             options={{
                 background: {
                     color: {
-                        value: "#A8E1FA",
+                        value: "#0000",
                     },
                 },
                 fpsLimit: 120,
@@ -63,10 +63,10 @@ export default function Particle() {
                 },
                 particles: {
                     color: {
-                        value: "#ffffff",
+                        value: "#95B4DE",
                     },
                     links: {
-                        color: "#ffffff",
+                        color: "#95B4DE",
                         distance: 150,
                         enable: true,
                         opacity: 0.5,
@@ -79,7 +79,7 @@ export default function Particle() {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 3,
+                        speed: 2,
                         straight: false,
                     },
                     number: {

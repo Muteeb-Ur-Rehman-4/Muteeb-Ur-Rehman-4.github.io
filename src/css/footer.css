@@ -1,0 +1,155 @@
+.footer {
+    background-color: #333333;
+    color: white;
+    position: relative;
+    text-align: left;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    min-height: 30vh;
+    align-items: center;
+  }
+  
+  .footer-left {
+    margin: 0rem 2rem;
+    width: 50%;
+    border-left: 2px solid white;
+    padding: 0rem 0.25rem;
+  }
+  
+  .footer-right {
+    width: 40%;
+    border-left: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .footer-contact {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0rem 1rem;
+  }
+  
+  .footer-a {
+    color: white;
+  }
+  
+  .quote {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: x-large;
+  }
+  
+  .spacing-away {
+    padding: 0rem 0.5rem;
+  }
+  
+  .hiding-away {
+    display: flex;
+    align-items: center;
+  }
+  
+  .bot-loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bot-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .more-page-footer {
+    position: relative;
+    font-family: 'Special Elite', cursive;
+    font-weight: bold;
+    /* Add other styling properties specific to the "More" page footer */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: rgba(230, 130, 255, 0.304);
+    text-transform: none;
+  }
+  
+  @media screen and (max-width: 786px) {
+    .more-page-footer {
+      background-image: url('../misc/Footer.gif');
+      height: 100%;
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-blend-mode: difference;
+    }
+  }
+  
+  @media screen and (max-width: 960px) {
+    .quote {
+      font-size: xx-large;
+    }
+    .footer-left,
+    .footer-right {
+      border-left: 1px solid white;
+    }
+    .footer-right {
+      font-size: small;
+    }
+    .spacing-away {
+      padding: 0rem 0.75rem;
+    }
+    .footer-right {
+      width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 786px) {
+    .quote {
+      font-size: large;
+    }
+    .footer-right {
+      font-size: x-small;
+    }
+    .footer-icon {
+      height: 2vh;
+    }
+    
+  }
+  
+  @media screen and (max-width: 640px) {
+    .quote {
+      font-size: medium;
+    }
+    .footer-icon {
+      height: 3vh;
+    }
+    .footer-left {
+      width: 35%;
+    }
+    .footer-right {
+      font-size: xx-small;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .quote {
+      font-size: small;
+    }
+    .hiding-away {
+      display: none;
+    }
+    .footer-right {
+      flex-direction: row;
+      justify-content: center;
+    }
+    .footer-icon {
+      height: 5vh;
+      width: auto;
+    }
+  }
+  

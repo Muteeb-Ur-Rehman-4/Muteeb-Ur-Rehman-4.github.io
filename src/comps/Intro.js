@@ -1,9 +1,11 @@
-import React from 'react'
-import '../css/Intro.css'
-import resume from '../misc/Muteeb-Resume.pdf'
-import Techused from './Techused'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faCloudArrowDown, faGlobe } from '@fortawesome/free-solid-svg-icons'
+import React from 'react';
+import '../css/Intro.css';
+import resume from '../misc/Muteeb-Resume.pdf';
+import Techused from './Techused';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faCloudArrowDown, faGlobe } from '@fortawesome/free-solid-svg-icons';
+ 
+
 export default function Intro() {
   
 
@@ -26,7 +28,7 @@ export default function Intro() {
         <a className="fancy btn" id='no-decor' href={resume} role="button">
           <span>Download CV</span>
         <div className="icon">
-        <FontAwesomeIcon className='icon-size' icon={faCloudArrowDown} />
+        <FontAwesomeIcon className='icon-size' icon={faCloudArrowDown} bounce />
         </div>
         </a>
         
@@ -35,15 +37,16 @@ export default function Intro() {
           Connect with me!
           </span>
         <div class='icon' >
-        <FontAwesomeIcon className='icon-size' icon={faGlobe} />
+        <FontAwesomeIcon className='icon-size' icon={faGlobe} bounce />
         </div>
           </a>
         </div>
-        <div className='bottom'>
+        <div className='bottom'>  
         <h1>A little about myself and what I do:</h1>
-        
+        <p>
+        I am a versatile web developer with a strong command of React.js and a passion for continuous learning. Currently, I am actively expanding my skill set by diving into Node.js. This will allow me to not only create robust front-end experiences but also build scalable and efficient server-side applications. In my spare time, I like to watch and play football. I used to be a hardcore gamer too but that feels like an entire lifetime ago!
+        </p>
         <div className='flexing'>
-          
           <Techused />
           
         </div>
