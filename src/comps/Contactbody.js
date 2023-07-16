@@ -38,16 +38,16 @@ export default function Contactbody() {
           <div className='contact-flex'></div>
           <div className='icons-flexing'>
             <a className='contact-a' href='https://github.com/Muteeb-Ur-Rehman-4/MyPortfolio'>
-              <FontAwesomeIcon className='icons-contact' icon={faCode} />
+              <FontAwesomeIcon className='icons-contact' icon={faCode} bounce/>
             </a>
             <a className='contact-a' href='mailto:muteeb.0004@gmail.com'>
-              <FontAwesomeIcon className='icons-contact' icon={faEnvelope} />
+              <FontAwesomeIcon className='icons-contact' icon={faEnvelope} bounce/>
             </a>
             <a className='contact-a' href='tel:+923062733695'>
-              <FontAwesomeIcon className='icons-contact' icon={faPhone} />
+              <FontAwesomeIcon className='icons-contact' icon={faPhone} bounce/>
             </a>
             <a className='contact-a' href='https://www.linkedin.com/in/muteeb-ur-rehman-b87a201a5/'>
-              <FontAwesomeIcon className='icons-contact' icon={faGlobe} />
+              <FontAwesomeIcon className='icons-contact' icon={faGlobe} bounce/>
             </a>
           </div>
         </div>

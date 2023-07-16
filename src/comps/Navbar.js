@@ -7,7 +7,6 @@ const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const isMorePage = location.pathname === '/More';
-
   const [isSticky, setIsSticky] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
