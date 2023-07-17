@@ -1,5 +1,5 @@
 import React, { Suspense, useState, useEffect } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import PacmanLoader from "react-spinners/ClipLoader";
 import './App.css';
 
@@ -30,7 +30,7 @@ const LoadingScreen = () => {
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Suspense fallback={<LoadingScreen />}>
           <Routes>
             <Route path="/" element={<LazyHome />} />
@@ -38,7 +38,7 @@ function App() {
             <Route path="/More" element={<LazyMore />} />
           </Routes>
         </Suspense>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
