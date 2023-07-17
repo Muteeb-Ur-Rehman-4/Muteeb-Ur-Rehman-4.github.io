@@ -109,6 +109,10 @@
   .bottom{
     margin-top: 12vh;
   }
+
+  .intro-top h3, .bottom p{
+    padding: 0rem 1rem;
+  }
   @media screen and (max-width: 960px) {
     .intro-btns{
       margin: 5rem 0rem;
@@ -126,7 +130,13 @@
 
   }
   @media screen and (max-width: 820px) {
-    
+    .intro-top h3, .bottom p{
+      font-size: medium;
+      text-align: justify;
+    }
+    .intro-top h1, .bottom h1{
+      font-size: larger;
+    }
     .intro-btns{
         display: block;
         
@@ -142,7 +152,10 @@
   }
 
   @media screen and (max-width: 640px) {
-
+    .intro-top h3, .bottom p{
+      font-size: small;
+      
+    }
     .btn span{
         font-size: medium;
     }

@@ -55,11 +55,10 @@ export default function Intro() {
           <div className='bottom'>
             <h1>A little about myself and what I do:</h1>
             <p>
-              I am a versatile web developer with a strong command of React.js and a passion for continuous learning.
-              Currently, I am actively expanding my skill set by diving into Node.js. This will allow me to not only
-              create robust front-end experiences but also build scalable and efficient server-side applications. In my
-              spare time, I like to watch and play football. I used to be a hardcore gamer too, but that feels like an
-              entire lifetime ago!
+              I am a versatile web developer with a strong command of React.js and a passion for continuous learning. Currently, I am actively expanding my skill set by diving into Node.js. This will allow me to not only create robust front-end experiences but also build scalable and efficient server-side applications. 
+            </p>
+            <p>
+              In my spare time, I like to watch and play football. I used to be a hardcore gamer too, but that feels like a lifetime ago!
             </p>
             <div className='flexing'>
               <Techused />

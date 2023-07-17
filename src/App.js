@@ -11,7 +11,7 @@ const LoadingScreen = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const delay = 1500; // Adjust the delay time in milliseconds (e.g., 3000 for 3 seconds)
+    const delay = 3500; // Adjust the delay time in milliseconds (e.g., 3000 for 3 seconds)
 
     const timer = setTimeout(() => {
       setIsLoading(false);
