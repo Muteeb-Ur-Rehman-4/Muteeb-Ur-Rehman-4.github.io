@@ -38,11 +38,20 @@ export default function Techused() {
             <h3>Technologies I have hands-on experience with:</h3>
             <div id='tech-box'>
               <div className='grid-container'>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
                 <img className='icons' src={HTML_icon} alt='HTML' />
+                </a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
                 <img className='icons' src={CSS_icon} alt='CSS' />
+                </a>
+                <a href="https://react.dev/blog/2023/03/16/introducing-react-dev">
                 <img className='icons' src={React_icon} alt='React' />
+                </a>
+                <a href="https://dev.mysql.com/doc/"></a>
                 <img className='icons' src={MySQL_icon} alt='MySQL' />
-                <img className='icons' src={Boot_icon} alt='' />
+                <a href="https://getbootstrap.com/">
+                <img className='icons' src={Boot_icon} alt='Bootstrap' />
+                </a>
               </div>
             </div>
           </div>
