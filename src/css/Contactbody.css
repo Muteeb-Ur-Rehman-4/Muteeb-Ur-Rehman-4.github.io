@@ -31,12 +31,15 @@
 .contact-a {
     color: white;
 }
+.font-sizer{
+    padding: 0rem 1rem;
+
+}
 
   
 @media screen and (max-width: 786px) {
 .icons-flexing{
     flex-direction:column;
-    
     }
 .icons-contact{
     padding: 1rem 0rem;
@@ -50,5 +53,13 @@
     margin: 5rem 0rem;
 }
 }
+
+@media screen and (max-width: 640px) {
+   
+    .font-sizer{
+        font-size: x-small;
+    }
+}
+    
 
 

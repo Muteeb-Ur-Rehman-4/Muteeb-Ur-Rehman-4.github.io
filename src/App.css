@@ -28,6 +28,9 @@
 .App-link {
   color: #61dafb;
 }
+.loading-screen{
+  min-height: 100vh;
+}
 
 @keyframes App-logo-spin {
   from {
