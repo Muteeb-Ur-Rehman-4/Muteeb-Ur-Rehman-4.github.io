@@ -1,5 +1,5 @@
 import React, { Suspense, useState, useEffect } from 'react';
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Link, Route, Routes } from 'react-router-dom';
 import PacmanLoader from "react-spinners/ClipLoader";
 import './App.css';
 
