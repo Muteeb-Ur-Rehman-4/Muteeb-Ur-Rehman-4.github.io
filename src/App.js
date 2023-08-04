@@ -2,7 +2,7 @@ import React, { Suspense, useState, useEffect } from 'react';
 import { HashRouter, Link, Route, Routes } from 'react-router-dom';
 import PacmanLoader from "react-spinners/ClipLoader";
 import './App.css';
-import {Helmet} from "react-helmet";
+
 
 const LazyHome = React.lazy(() => import('./pages/Home'));
 const LazyContact = React.lazy(() => import('./pages/Contact'));
@@ -31,12 +31,6 @@ const LoadingScreen = () => {
 function App() {
   return (
     <div className="App">
-      <Helmet>
-            <meta charSet="utf-8" />
-            <title>Retro's Remnant</title>
-            <link rel="icon" type="image/x-icon" href="../public/favicon.ico" />
-            <meta name="description" content="Retro's Remnant - A modern retro themed website" />
-      </Helmet>
       <HashRouter>
         <Suspense fallback={<LoadingScreen />}>
           <Routes>
