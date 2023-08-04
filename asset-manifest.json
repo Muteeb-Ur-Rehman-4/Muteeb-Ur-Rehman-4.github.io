@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7bf35584.css",
-    "main.js": "/static/js/main.25676804.js",
+    "main.js": "/static/js/main.b0f3ef36.js",
     "static/css/488.8e18c9d2.chunk.css": "/static/css/488.8e18c9d2.chunk.css",
     "static/js/488.aace0aa6.chunk.js": "/static/js/488.aace0aa6.chunk.js",
     "static/css/762.6b812927.chunk.css": "/static/css/762.6b812927.chunk.css",
@@ -9,7 +9,7 @@
     "static/css/82.891e11bd.chunk.css": "/static/css/82.891e11bd.chunk.css",
     "static/js/82.9548b9c7.chunk.js": "/static/js/82.9548b9c7.chunk.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
-    "static/js/658.6588f75e.chunk.js": "/static/js/658.6588f75e.chunk.js",
+    "static/js/658.8ef51639.chunk.js": "/static/js/658.8ef51639.chunk.js",
     "static/js/834.0663798f.chunk.js": "/static/js/834.0663798f.chunk.js",
     "static/media/The-one.gif": "/static/media/The-one.b53753e1ee194962bebd.gif",
     "static/media/try2.jpg": "/static/media/try2.1917b65b112e17394c07.jpg",
@@ -22,7 +22,7 @@
     "static/media/Pika.gif": "/static/media/Pika.c70bb52c9351064bd1c6.gif",
     "index.html": "/index.html",
     "main.7bf35584.css.map": "/static/css/main.7bf35584.css.map",
-    "main.25676804.js.map": "/static/js/main.25676804.js.map",
+    "main.b0f3ef36.js.map": "/static/js/main.b0f3ef36.js.map",
     "488.8e18c9d2.chunk.css.map": "/static/css/488.8e18c9d2.chunk.css.map",
     "488.aace0aa6.chunk.js.map": "/static/js/488.aace0aa6.chunk.js.map",
     "762.6b812927.chunk.css.map": "/static/css/762.6b812927.chunk.css.map",
@@ -30,11 +30,11 @@
     "82.891e11bd.chunk.css.map": "/static/css/82.891e11bd.chunk.css.map",
     "82.9548b9c7.chunk.js.map": "/static/js/82.9548b9c7.chunk.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map",
-    "658.6588f75e.chunk.js.map": "/static/js/658.6588f75e.chunk.js.map",
+    "658.8ef51639.chunk.js.map": "/static/js/658.8ef51639.chunk.js.map",
     "834.0663798f.chunk.js.map": "/static/js/834.0663798f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7bf35584.css",
-    "static/js/main.25676804.js"
+    "static/js/main.b0f3ef36.js"
   ]
 }
