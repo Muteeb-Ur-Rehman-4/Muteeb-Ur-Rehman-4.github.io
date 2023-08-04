@@ -3,7 +3,6 @@ import { HashRouter, Link, Route, Routes } from 'react-router-dom';
 import PacmanLoader from "react-spinners/ClipLoader";
 import './App.css';
 
-
 const LazyHome = React.lazy(() => import('./pages/Home'));
 const LazyContact = React.lazy(() => import('./pages/Contact'));
 const LazyMore = React.lazy(() => import('./pages/More'));
