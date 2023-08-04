@@ -4,7 +4,7 @@ import '../css/Tech.css';
 import HTML_icon from '../misc/HTML.png';
 import CSS_icon from '../misc/CSS3.png';
 import React_icon from '../misc/Reactjs.png';
-import MySQL_icon from '../misc/MySQL.png';
+import SQL_icon from '../misc/Sql.png';
 import Boot_icon from '../misc/Bootstrap.png';
 
 export default function Techused() {
@@ -47,8 +47,9 @@ export default function Techused() {
                 <a href="https://react.dev/blog/2023/03/16/introducing-react-dev">
                 <img className='icons' src={React_icon} alt='React' />
                 </a>
-                <a href="https://dev.mysql.com/doc/"></a>
-                <img className='icons' src={MySQL_icon} alt='MySQL' />
+                <a href="https://www.w3schools.com/sql">
+                <img className='icons' src={SQL_icon} alt='MySQL' />
+                </a>
                 <a href="https://getbootstrap.com/">
                 <img className='icons' src={Boot_icon} alt='Bootstrap' />
                 </a>
