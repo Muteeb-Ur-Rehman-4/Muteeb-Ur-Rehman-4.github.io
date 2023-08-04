@@ -29,7 +29,7 @@ export default function Morebody() {
     <div className='Morebody-intro'>
       <div className='interests'>
         <h2 id='top-heading'>P.S I love Retro!</h2>
-        <h3>Here are some of my areas of interest.</h3>
+        <h3>Scroll down to see my areas of interest!</h3>
       </div>
       <div id="page-grid">
         <div id="box">
