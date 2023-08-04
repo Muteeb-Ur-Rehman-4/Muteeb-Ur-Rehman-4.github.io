@@ -1,10 +1,12 @@
+.Morebody-intro{
+    margin-top: 3rem;
+}
 #page-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
-   
-}
 
+}
 #top-heading, #box h3{
     
     font-family: 'Tektur', cursive;
@@ -13,6 +15,7 @@
 #top-heading{
     margin-top: 10rem;
     font-size: xx-large;
+    margin-bottom: 8rem;
 }
 
 #box{
@@ -23,8 +26,8 @@
     box-shadow: 1px 2px 20px #BFBFBF;
     background-blend-mode: difference;
     border: 1px solid rgba(218, 202, 182, 0.2);
-    margin: 15%;
-    margin-bottom: 10rem;
+    margin: 10%;
+    
 }
 #box h3{
     font-size: x-large;
@@ -33,8 +36,9 @@
     text-align: center;
     text-shadow:3px 3px 3px black;
 }
-.Morebody-intro{
-    
+
+.interests{
+    margin-bottom: 3rem;
 }
 
 .interests p, .interests h3, #box p{
@@ -44,15 +48,22 @@
     font-size: large;
     text-align: justify;
     text-shadow:2px 2px 2px black;
+    padding: 2%;
 }
 
 @media screen and (max-width: 786px) {
+    .Morebody-intro{
+        margin-top: 4rem;
+    }
     #page-grid{
         grid-template-columns: 1fr;
     }
     #box h3 {
      font-size: large;
      display: flex;
+    }
+    .interests{
+        margin-bottom: 6rem;
     }
     .interests p, #box p {
         font-size: medium;
@@ -68,7 +79,12 @@
 
 
 @media screen and (max-width: 640px) {
-    
+    .Morebody-intro{
+        margin-top: 6rem;
+    }
+    .interests{
+        margin-bottom: 8rem;
+    }
     #box h3{
         font-size: medium;
     }
