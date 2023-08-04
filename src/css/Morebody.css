@@ -1,5 +1,6 @@
 .Morebody-intro{
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin-top: 3.5rem;
     margin-top: 3rem;
     margin-top: 3.5rem;
@@ -7,6 +8,9 @@
 =======
     margin-top: 3rem;
 >>>>>>> 9d0bb85 (Better-more-page-responsiveness)
+=======
+    margin-top: 3.5rem;
+>>>>>>> 8ec65ef (slight-morepage-fix)
 }
 #page-grid{
     display: grid;
@@ -70,6 +74,7 @@
      display: flex;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
     #top-heading{
@@ -83,6 +88,11 @@
 
 =======
 >>>>>>> 9d0bb85 (Better-more-page-responsiveness)
+=======
+    #top-heading{
+        margin-bottom: 6rem;
+    }
+>>>>>>> 8ec65ef (slight-morepage-fix)
     .interests{
         margin-bottom: 6rem;
     }
@@ -102,6 +112,7 @@
 @media screen and (max-width: 640px) {
     .Morebody-intro{
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         margin-top: 5rem;
         margin-top: 6rem;
@@ -110,6 +121,9 @@
 =======
         margin-top: 6rem;
 >>>>>>> 9d0bb85 (Better-more-page-responsiveness)
+=======
+        margin-top: 5rem;
+>>>>>>> 8ec65ef (slight-morepage-fix)
     }
     .interests{
         margin-bottom: 8rem;
