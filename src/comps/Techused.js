@@ -1,4 +1,4 @@
-import React, { useState, useEffect, lazy } from 'react';
+import React, { useState, useEffect } from 'react';
 import { PropagateLoader } from 'react-spinners';
 import '../css/Tech.css';
 import HTML_icon from '../misc/HTML.png';
