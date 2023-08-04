@@ -34,7 +34,7 @@ function App() {
       <Helmet>
             <meta charSet="utf-8" />
             <title>Retro's Remnant</title>
-            <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+            <link rel="icon" type="image/x-icon" href="../public/favicon.ico" />
             <meta name="description" content="Retro's Remnant - A modern retro themed website" />
       </Helmet>
       <HashRouter>
