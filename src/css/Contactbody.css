@@ -32,10 +32,13 @@
     color: white;
 }
 .font-sizer{
-    padding: 0rem 1rem;
+    padding: 3rem 2em;
 
 }
 
+.contact_bot{
+    margin: 3rem 0rem;
+}
   
 @media screen and (max-width: 786px) {
 .icons-flexing{
