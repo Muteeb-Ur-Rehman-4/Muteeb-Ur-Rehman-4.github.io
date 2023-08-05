@@ -1,5 +1,8 @@
 .Morebody-intro{
     margin-top: 3.5rem;
+    margin-top: 3rem;
+    margin-top: 3.5rem;
+
 }
 #page-grid{
     display: grid;
@@ -62,9 +65,17 @@
      font-size: large;
      display: flex;
     }
+
+
     #top-heading{
         margin-bottom: 6rem;
     }
+
+
+    #top-heading{
+        margin-bottom: 6rem;
+    }
+
     .interests{
         margin-bottom: 6rem;
     }
@@ -83,7 +94,11 @@
 
 @media screen and (max-width: 640px) {
     .Morebody-intro{
+
         margin-top: 5rem;
+        margin-top: 6rem;
+        margin-top: 5rem;
+
     }
     .interests{
         margin-bottom: 8rem;
