@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../css/Intro.css';
-import resume from '../misc/Muteeb_Resume.pdf';
+import resume from '../misc/Muteeb-Resume.pdf';
 import Techused from './Techused';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCloudArrowDown, faGlobe } from '@fortawesome/free-solid-svg-icons';
