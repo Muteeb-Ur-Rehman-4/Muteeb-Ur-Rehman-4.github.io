@@ -51,7 +51,11 @@ export default function Contactbody() {
             </a>
           </div>
         </div>
+<<<<<<< HEAD
         <div className='contact_bot margin-adder'>
+=======
+        <div className='contact_bot'>
+>>>>>>> dc1cfd5 (Codecademy prof add and minor fixes)
         <div className='font-sizer'>
           <h2>To track my progress and showcase my self-directed learning journey, please find my GitHub and Codecademy profiles linked below.</h2>
           <h3>These repositories and completed courses exemplify my commitment to continuous growth and development in the field of software engineering. Feel free to explore and assess my projects and accomplishments on these platforms.</h3>

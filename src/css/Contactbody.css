@@ -32,12 +32,20 @@
     color: white;
 }
 .font-sizer{
+<<<<<<< HEAD
     padding: 3rem 2rem;
+=======
+    padding: 3rem 2em;
+>>>>>>> dc1cfd5 (Codecademy prof add and minor fixes)
 
 }
 
 .contact_bot{
+<<<<<<< HEAD
     margin: 2.5rem 0rem;
+=======
+    margin: 3rem 0rem;
+>>>>>>> dc1cfd5 (Codecademy prof add and minor fixes)
 }
   
 @media screen and (max-width: 786px) {
